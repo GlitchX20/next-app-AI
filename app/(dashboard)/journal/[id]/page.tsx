@@ -12,12 +12,15 @@ const getEntry = async (id) => {
       },
     },
   })
+
+  return entry
 }
 
 const EntryPage = ({ params }) => {
+  const entry = getEntry(params.id)
   return (
     <div>
-      <Editor />
+      <Editor entry={entry} />
     </div>
   )
 }
