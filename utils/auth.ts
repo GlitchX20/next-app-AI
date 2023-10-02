@@ -9,5 +9,6 @@ export const getUserByClerkID = async () => {
       clerkId: userId,
     },
   })
+
   return user
 }

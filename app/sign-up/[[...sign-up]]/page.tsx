@@ -1,5 +1,7 @@
 import { SignUp } from '@clerk/nextjs'
 
-export default function SignUpPage() {
+const SignUpPage = () => {
   return <SignUp afterSignUpUrl="/new-user" redirectUrl="/new-user" />
 }
+
+export default SignUpPage

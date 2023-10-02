@@ -1,4 +1,5 @@
-import { UserButton } from '@clerk/nextjs/app-beta'
+import { UserButton } from '@clerk/nextjs'
+
 const DashboardLayout = ({ children }) => {
   return (
     <div className="h-screen w-screen relative">
@@ -16,5 +17,4 @@ const DashboardLayout = ({ children }) => {
     </div>
   )
 }
-
 export default DashboardLayout
